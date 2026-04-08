@@ -1,15 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MoBRII - Molecular Biosciences Research and Innovation Institute</title>
-  <style>
-    body { font-family: Arial; margin: 0; }
-    header { background: #0b3d91; color: white; padding: 20px; text-align: center; }
-    nav { background: #eee; padding: 10px; text-align: center; }
-    nav a { margin: 10px; text-decoration: none; color: #333; }
-    section { padding: 20px; }
-    footer { background: #0b3d91; color: white; text-align: center; padding: 10px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoBRII</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #0b3d91, #1e90ff);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #0b3d91;
+  font-weight: bold;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #0b3d91;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+
 </head>
 
 <body>
@@ -22,31 +84,40 @@
 <nav>
   <a href="#about">About</a>
   <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-  <h2>About Us</h2>
-  <p>MoBRII is focused on advancing molecular biosciences, enzyme technology, and biotechnology innovation.</p>
+  <h2>About</h2>
+  <p>
+    MoBRII is dedicated to advancing molecular biosciences, enzyme engineering, and biotechnology innovation. 
+    Our work focuses on translating fundamental biochemical research into practical solutions.
+  </p>
 </section>
 
 <section id="research">
   <h2>Research Areas</h2>
-  <ul>
-    <li>Glucose Oxidase Engineering</li>
-    <li>Biosensor Development</li>
-    <li>Bioremediation</li>
-  </ul>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Glucose Oxidase Engineering</h3>
+      <p>Overexpression, purification, and optimization of glucose oxidase for industrial and biomedical applications.</p>
+    </div>
+
+    <div class="card">
+      <h3>Biosensor Development</h3>
+      <p>Immobilization of enzymes on nanomaterials for glucose sensing and diagnostic technologies.</p>
+    </div>
+
+    <div class="card">
+      <h3>Bioremediation</h3>
+      <p>Application of biological systems to detoxify oil-contaminated environments and restore ecosystems.</p>
+    </div>
+
+  </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-</section>
-
-<footer>
-  <p>© 2026 MoBRII</p>
-</footer>
-
-</body>
-</html>
+<section id="publications">
+  <h2>Publications</h2>
+  <p>Coming soon...</p
